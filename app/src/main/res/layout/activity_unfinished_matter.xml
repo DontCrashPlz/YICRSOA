@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_common_titlebar2"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.hnsi.zheng.hnti_erp_app.widgets.NestedListView
+                android:id="@+id/matter_lv_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="0.5dp"
+                android:divider="@color/divideGrey"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/divideGrey"/>
+
+            <TextView
+                android:id="@+id/matter_tv_history"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="审批纪录"
+                android:textSize="18dp"
+                android:textColor="@color/listTextGrey"
+                android:gravity="center"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/divideGrey"/>
+
+            <com.hnsi.zheng.hnti_erp_app.widgets.NestedListView
+                android:id="@+id/matter_lv_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="0.5dp"
+                android:divider="@color/divideGrey"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/divideGrey"/>
+
+            <Button
+                android:id="@+id/matter_btn_commit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="18dp"
+                android:text="提   交"
+                android:textSize="16dp"
+                android:textColor="@color/textWhite"
+                android:background="@drawable/server_complete_btn_background_selector"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

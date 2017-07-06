@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="处理意见"
+        android:textSize="15dp"
+        android:textColor="@color/listTextGrey"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"/>
+
+    <EditText
+        android:id="@+id/item_audit_et_suggest"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="start"
+        android:padding="6dp"
+        android:background="@drawable/matter_edittext_background"
+        android:layout_marginBottom="18dp"
+        android:hint="请在此输入您的处理意见"
+        android:textSize="15dp"/>
+</LinearLayout>

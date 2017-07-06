@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|right"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageButton
+        android:id="@+id/main_promoted_imagebutton"
+        android:layout_width="@dimen/dim56dp"
+        android:layout_height="@dimen/dim56dp"
+        android:visibility="visible"
+        android:background="@drawable/onivas_fab_circle"
+        />
+
+    <TextView
+        android:id="@+id/main_promoted_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_background_red"
+        android:textColor="@android:color/white"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:layout_alignRight="@+id/main_promoted_imagebutton"/>
+
+</RelativeLayout>

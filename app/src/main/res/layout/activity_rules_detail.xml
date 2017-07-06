@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/layout_common_titlebar"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/rules_detail_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="规章制度标题"
+                    android:textSize="18dp"
+                    android:textColor="@android:color/black"
+                    android:layout_margin="18dp"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:id="@+id/rules_detail_tv_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发布人"
+                    android:textSize="14dp"
+                    android:textColor="#a3a3a3"/>
+
+                <TextView
+                    android:id="@+id/rules_detail_tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0000-00-00 00:00"
+                    android:textSize="14dp"
+                    android:textColor="#a3a3a3"
+                    android:layout_margin="4dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#999999"
+                    android:layout_marginTop="18dp"/>
+
+                <WebView
+                    android:id="@+id/rules_detail_wv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+        </ScrollView>
+
+</LinearLayout>

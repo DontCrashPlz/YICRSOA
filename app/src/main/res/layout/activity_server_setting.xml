@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundGrey">
+    <include layout="@layout/layout_common_titlebar"/>
+    <EditText
+        android:id="@+id/server_et_ip_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="36dp"
+        android:textSize="16dp"
+        android:hint="@string/serverIpAddress"
+        android:textCursorDrawable="@null"
+        android:textColorHint="@color/tabTextGrey"
+        android:textColor="@color/tabTextGrey"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/server_edittext_background"
+        android:singleLine="true"/>
+    <EditText
+        android:id="@+id/server_et_ip_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="12dp"
+        android:hint="@string/serverIpPort"
+        android:textSize="16dp"
+        android:textCursorDrawable="@null"
+        android:textColorHint="@color/tabTextGrey"
+        android:textColor="@color/tabTextGrey"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/server_edittext_background"/>
+
+    <Button
+        android:id="@+id/server_btn_complete"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:text="@string/complete"
+        android:textSize="16dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/server_complete_btn_background_selector"/>
+</LinearLayout>

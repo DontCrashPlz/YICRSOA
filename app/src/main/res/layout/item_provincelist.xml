@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundGrey">
+
+    <TextView
+        android:id="@+id/item_provincelist_province"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="省份"
+        android:textSize="16dp"
+        android:textColor="#a6a6a6"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:paddingLeft="10dp"/>
+
+    <com.hnsi.zheng.hnti_erp_app.widgets.NestedListView
+        android:id="@+id/item_provincelist_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

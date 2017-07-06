@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f9fe">
+    <include layout="@layout/layout_common_titlebar2"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tabTextGrey"
+        android:layout_marginTop="8dp"/>
+    <EditText
+        android:id="@+id/feed_back_et_suggest"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:hint="为了第一时间帮您解决问题，建议您留下联系方式"
+        android:textColorHint="@color/tabTextGrey"
+        android:textColor="@color/tabTextGrey"
+        android:textCursorDrawable="@null"
+        android:background="@android:color/white"
+        android:gravity="top"
+        android:padding="6dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tabTextGrey"/>
+
+</LinearLayout>

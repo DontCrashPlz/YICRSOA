@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@android:color/white">
+    <include layout="@layout/layout_common_titlebar2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="基本信息"
+        android:textSize="18dp"
+        android:textColor="@color/listTextGrey"
+        android:gravity="center"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divideGrey"/>
+
+    <ListView
+        android:id="@+id/unfinished_lv_matter_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divideGrey"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="事务处理"
+        android:textSize="18dp"
+        android:textColor="@color/listTextGrey"
+        android:gravity="center"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divideGrey"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="处理决策"
+            android:textSize="15dp"
+            android:textColor="@color/listTextGrey"
+            android:layout_marginLeft="18dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/unfinished_tv_handle"
+            android:layout_width="110dp"
+            android:layout_height="33dp"
+            android:text="请点击选择"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            android:background="@color/backgroundBlue"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divideGrey"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="常用意见"
+            android:textSize="15dp"
+            android:textColor="@color/listTextGrey"
+            android:layout_marginLeft="18dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/unfinished_tv_common"
+            android:layout_width="110dp"
+            android:layout_height="33dp"
+            android:text="请点击选择"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            android:background="@color/backgroundBlue"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divideGrey"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="处理意见"
+        android:textSize="15dp"
+        android:textColor="@color/listTextGrey"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"/>
+    
+    <EditText
+        android:id="@+id/unfinished_et_suggest"
+        android:layout_width="340dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="18dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/matter_edittext_background"/>
+    
+    <Button
+        android:id="@+id/unfinished_btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="提   交"
+        android:textSize="16dp"
+        android:textColor="@color/textWhite"
+        android:background="@drawable/server_complete_btn_background_selector"/>
+
+</LinearLayout>

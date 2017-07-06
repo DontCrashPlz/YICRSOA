@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    <TextView
+        android:id="@+id/item_circle_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_background_blue"
+        android:text="名"
+        android:textColor="@android:color/white"
+        android:textSize="22dp"
+        android:gravity="center" />
+    <com.hnsi.zheng.hnti_erp_app.widgets.CircleImageView
+        android:id="@+id/item_circle_imageview"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        app:border_width="1dp"
+        app:border_color="#ffffff"/>
+</RelativeLayout>

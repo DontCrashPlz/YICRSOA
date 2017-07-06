@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="78dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/item_finished_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/item_finished_tv_tag"
+        android:layout_alignTop="@+id/item_finished_tv_tag"
+        android:text="事件标题"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:maxLines="2"/>
+
+    <TextView
+        android:id="@+id/item_finished_tv_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已办"
+        android:textColor="@android:color/white"
+        android:background="#16BD91"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="12dp"/>
+
+    <TextView
+        android:id="@+id/item_finished_tv_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="事件分类"
+        android:textSize="14dp"
+        android:textColor="#b1b1b1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/item_finished_tv_title"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/item_finished_tv_starttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000-00-00 00:00:00.0"
+        android:textSize="14dp"
+        android:textColor="#b1b1b1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="12dp"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

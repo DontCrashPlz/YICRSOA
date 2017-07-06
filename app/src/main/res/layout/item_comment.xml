@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.hnsi.zheng.hnti_erp_app.widgets.CircleImageView
+        android:id="@+id/item_comment_civ_usericon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/user_icon"
+        android:layout_margin="12dp"
+        app:border_width="1dp"
+        app:border_color="#ffffff"/>
+    <TextView
+        android:id="@+id/item_comment_tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item_comment_civ_usericon"
+        android:layout_alignTop="@+id/item_comment_civ_usericon"
+        android:text="评论人"
+        android:textColor="#444444"
+        android:textSize="16dp"
+        android:layout_marginRight="12dp"/>
+
+    <TextView
+        android:id="@+id/item_comment_tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item_comment_civ_usericon"
+        android:layout_below="@+id/item_comment_tv_name"
+        android:text="0000-00-00 00:00"
+        android:textColor="#444444"
+        android:textSize="14dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="12dp"/>
+
+    <TextView
+        android:id="@+id/item_comment_tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item_comment_civ_usericon"
+        android:layout_below="@+id/item_comment_tv_time"
+        android:text="此处省略一万字"
+        android:textColor="#444444"
+        android:textSize="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="12dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tabTextGrey"
+        android:layout_below="@+id/item_comment_tv_content"
+        android:layout_marginTop="12dp"/>
+</RelativeLayout>

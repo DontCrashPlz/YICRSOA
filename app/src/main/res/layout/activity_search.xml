@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+
+            <EditText
+                android:id="@+id/activity_search_et"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:padding="6dp"
+                android:drawableLeft="@mipmap/search_icon"
+                android:drawablePadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/searchview_background"
+                android:textSize="14dp"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:hint="请输入姓名或电话关键字"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/search_clear_normal"
+                android:id="@+id/activity_search_iv_delete"
+                android:layout_gravity="right|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/activity_search_tv"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="返回"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#a7aaa9"/>
+
+    <ListView
+        android:id="@+id/activity_search_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

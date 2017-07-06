@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/item_contacts_rly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mine_rly_background_selector"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/item_contacts_tv_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="部门名称"
+            android:textColor="#414141"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/item_contacts_iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_close"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"/>
+
+        <TextView
+            android:id="@+id/item_contacts_tv_num_of_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/num_of_person"
+            android:textSize="10dp"
+            android:textColor="#7e7e7e"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"/>
+    </RelativeLayout>
+</LinearLayout>

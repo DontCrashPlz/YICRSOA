@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/change_icon_menu_background"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/icon_menu_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="拍照"
+            android:textColor="#007bff"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#c3c3c6"/>
+        <TextView
+            android:id="@+id/icon_menu_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="从相册选择"
+            android:textColor="#007bff"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#c3c3c6"/>
+        <TextView
+            android:id="@+id/icon_menu_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="删除当前头像"
+            android:textColor="#007bff"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/icon_menu_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:textColor="#007bff"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/change_icon_menu_background"
+        android:clickable="true" />
+
+</LinearLayout>

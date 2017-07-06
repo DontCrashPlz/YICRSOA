@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_common_titlebar"/>
+
+    <View
+        android:id="@+id/divide"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/approval_btn_bottomBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/divide"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:text="抄送给我"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:background="@drawable/approval_bottombtn_background_selector"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/approval_btn_middleBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/approval_btn_bottomBtn"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:text="我的审批"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:background="@drawable/approval_middlebtn_background_selector"/>
+
+    <Button
+        android:id="@+id/approval_btn_topBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/approval_btn_middleBtn"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:text="我的申请"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:background="@drawable/approval_topbtn_background_selector"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/divide">
+        <TextView
+            android:id="@+id/approval_tv_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="＋ 新建申请"
+            android:textSize="18dp"
+            android:textColor="@color/login_forget_textcolor_selector"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

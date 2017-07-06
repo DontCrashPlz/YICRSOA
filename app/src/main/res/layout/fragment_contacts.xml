@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6">
+
+    <include layout="@layout/layout_common_titlebar"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contacts_refresh_view">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/main_search_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="6dp"
+                    android:padding="4dp"
+                    android:drawableLeft="@mipmap/search_icon"
+                    android:drawablePadding="5dp"
+                    android:background="@drawable/searchview_background"
+                    android:textSize="14dp"
+                    android:text="请输入关键字"
+                    android:clickable="true"/>
+
+                <com.hnsi.zheng.hnti_erp_app.widgets.NestedListView
+                    android:id="@+id/contacts_lv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="1px"
+                    android:divider="@color/contacts_divide_gray"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/main_search_layout"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:padding="6dp"
+                android:drawableLeft="@mipmap/search_icon"
+                android:drawablePadding="5dp"
+                android:background="@drawable/searchview_background"
+                android:textSize="14dp"
+                android:text="请输入关键字"
+                android:clickable="true"/>
+
+            <com.hnsi.zheng.hnti_erp_app.widgets.NestedListView
+                android:id="@+id/contacts_lv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="1px"
+                android:divider="@color/contacts_divide_gray"/>
+
+        </LinearLayout>
+
+    </ScrollView>-->
+
+</LinearLayout>

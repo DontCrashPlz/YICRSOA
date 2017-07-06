@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp">
+
+    <ProgressBar
+        android:id="@+id/item_tablefiles_progress"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        style="@style/mProgress_horizontal"
+        android:layout_alignParentBottom="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/item_tablefiles_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/file_icon"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/item_tablefiles_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="附件名称"
+            android:textSize="12dp"
+            android:textColor="@android:color/black"
+            android:singleLine="true"
+            android:layout_toRightOf="@+id/item_tablefiles_icon"
+            android:layout_toLeftOf="@+id/item_tablefiles_open"
+            android:layout_above="@+id/item_tablefiles_size"/>
+
+        <TextView
+            android:id="@+id/item_tablefiles_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0M"
+            android:textSize="11dp"
+            android:textColor="#7e7e7e"
+            android:layout_toRightOf="@+id/item_tablefiles_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/item_tablefiles_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2000-01-01"
+            android:textSize="11dp"
+            android:textColor="#7e7e7e"
+            android:layout_toRightOf="@+id/item_tablefiles_icon"
+            android:layout_below="@+id/item_tablefiles_size"/>
+
+        <Button
+            android:id="@+id/item_tablefiles_open"
+            android:layout_width="56dp"
+            android:layout_height="36dp"
+            android:text="打开"
+            android:textColor="@color/backgroundBlue"
+            android:textSize="14dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/tablefiles_openbtn_selector"
+            android:layout_marginRight="16dp"/>
+
+        <Button
+            android:id="@+id/item_tablefiles_pause"
+            android:layout_width="56dp"
+            android:layout_height="36dp"
+            android:text="暂停"
+            android:textColor="@color/backgroundBlue"
+            android:textSize="14dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/tablefiles_openbtn_selector"
+            android:layout_marginRight="16dp"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

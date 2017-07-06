@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_common_titlebar"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="56dp"
+            android:layout_above="@+id/notice_detail_lly_bottom">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/notice_detail_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="公告标题"
+                    android:textSize="18dp"
+                    android:textColor="@android:color/black"
+                    android:layout_margin="18dp"
+                    android:gravity="center_horizontal"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/notice_detail_tv_department"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发布部门"
+                        android:textSize="14dp"
+                        android:textColor="#a3a3a3"
+                        android:layout_marginRight="4dp"/>
+                    <TextView
+                        android:id="@+id/notice_detail_tv_author"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发布人"
+                        android:textSize="14dp"
+                        android:textColor="#a3a3a3"
+                        android:layout_marginLeft="4dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/notice_detail_tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0000-00-00 00:00"
+                    android:textSize="14dp"
+                    android:textColor="#a3a3a3"
+                    android:layout_margin="4dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#999999"
+                    android:layout_marginTop="18dp"/>
+
+                <WebView
+                    android:id="@+id/notice_detail_wv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+        </ScrollView>
+    <LinearLayout
+        android:id="@+id/notice_detail_lly_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="12dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#aeaeae"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/notice_detail_lly_read"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/mine_rly_background_selector"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/read_icon"
+                    android:layout_marginRight="4dp"/>
+                <TextView
+                    android:id="@+id/notice_detail_tv_readnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/num_of_read"
+                    android:textSize="16dp"
+                    android:textColor="#15bd90"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/notice_detail_divide"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#aeaeae"/>
+
+            <LinearLayout
+                android:id="@+id/notice_detail_lly_comment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/mine_rly_background_selector"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/comment_icon"
+                    android:layout_marginRight="4dp"/>
+                <TextView
+                    android:id="@+id/notice_detail_tv_commentnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/num_of_comment"
+                    android:textSize="16dp"
+                    android:textColor="#f6bb43"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

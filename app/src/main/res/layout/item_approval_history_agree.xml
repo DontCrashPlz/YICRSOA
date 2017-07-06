@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="78dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/item_history_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="事件标题"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="2"/>
+
+    <TextView
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:text="通过"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="#15be90"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="12dp"/>
+
+    <TextView
+        android:id="@+id/item_history_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="审批人"
+        android:textSize="14dp"
+        android:textColor="#b1b1b1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/item_history_title"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/item_history_department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="审批人职位"
+        android:textSize="14dp"
+        android:textColor="#b1b1b1"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/item_history_name"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="6dp"/>
+
+    <TextView
+        android:id="@+id/item_history_starttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000-00-00 00:00:00"
+        android:textSize="14dp"
+        android:textColor="#b1b1b1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/item_history_department"/>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/item_audit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="项名"
+            android:textSize="15dp"
+            android:textColor="@color/listTextGrey"
+            android:layout_marginLeft="18dp"
+            android:layout_centerVertical="true"/>
+        <ToggleButton
+            android:id="@+id/item_audit_switch"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:textOn=""
+            android:textOff=""
+            android:button="@null"
+            android:background="@drawable/toggle_btn_background_selector"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>

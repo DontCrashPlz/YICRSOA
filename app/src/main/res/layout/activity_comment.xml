@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/comment_panel_bottom"
+        android:orientation="vertical">
+        <include layout="@layout/layout_common_titlebar"/>
+        <ListView
+            android:id="@+id/comment_lv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tabTextGrey"
+        android:layout_above="@+id/comment_panel_bottom"/>
+
+    <LinearLayout
+        android:id="@+id/comment_panel_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+        <EditText
+            android:id="@+id/comment_et_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/comment_edittext_background"
+            android:maxLines="5"
+            android:textCursorDrawable="@null"
+            android:padding="4dp"/>
+        <Button
+            android:id="@+id/comment_btn_commit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/comment_commit_btn_background_selector"
+            android:text="评论"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:layout_marginLeft="12dp"/>
+    </LinearLayout>
+</RelativeLayout>

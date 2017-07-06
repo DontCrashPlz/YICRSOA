@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|right"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageButton
+        android:id="@+id/promoted_imagebutton"
+        android:layout_width="@dimen/dim48dp"
+        android:layout_height="@dimen/dim48dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp"
+        android:visibility="visible"
+        android:background="@drawable/onivas_fab_circle"
+        />
+
+    <TextView
+        android:id="@+id/promoted_textview"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@drawable/circle_background_red"
+        android:textColor="@android:color/white"
+        android:textSize="10dp"
+        android:gravity="center"
+        android:layout_alignRight="@+id/promoted_imagebutton"/>
+
+</RelativeLayout>

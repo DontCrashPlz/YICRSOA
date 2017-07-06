@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/titlebar_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@android:color/transparent">
+        <TextView
+            android:id="@+id/titlebar_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hnsi"
+            android:layout_centerInParent="true"
+            android:textColor="@color/textWhite"
+            android:textSize="22dp"/>
+
+        <ImageButton
+            android:id="@+id/titlebar_ibtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back_icon"
+            android:background="@drawable/back_button_background_selector"
+            android:padding="14dp"/>
+    </RelativeLayout>
+
+</FrameLayout>

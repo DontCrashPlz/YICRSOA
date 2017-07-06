@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundGrey">
+    <include layout="@layout/layout_common_titlebar"/>
+
+    <RadioGroup
+        android:id="@+id/approval_rp"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/backgroundGrey"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/approval_btn_unfinished"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/approval_tab_rbtn_background_selector"
+            android:text="待办事项"
+            android:textColor="@color/approval_tab_text_color_selector"/>
+
+        <RadioButton
+            android:id="@+id/approval_btn_finished"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/approval_tab_rbtn_background_selector"
+            android:text="已办事项"
+            android:textColor="@color/approval_tab_text_color_selector"/>
+
+    </RadioGroup>
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="2dp"-->
+        <!--android:background="@color/mineTextGrey"/>-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/approval_content_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">YICR_SOA</string>
+    <string name="username">账号</string>
+    <string name="password">密码</string>
+    <string name="login">登  录</string>
+    <string name="refresh">刷新</string>
+    <string name="forgetPassword">忘记密码？</string>
+    <string name="hnsi">软信科技</string>
+    <string name="serverIpAddress">请输入服务器地址 格式：192.168.12.12</string>
+    <string name="serverIpPort">请输入服务器端口 格式：8080</string>
+    <string name="serverIpPortHint">目前端口：%1$s</string>
+    <string name="complete">完成</string>
+    <string name="version">for Android V%1$s</string>
+    <string name="hnti">河南省信息咨询设计研究有限公司</string>
+    <string name="app_title">YICR综合信息管理系统</string>
+    <string name="remarks">Copyright2009-2016 All Rights Reserved</string>
+    <string name="copyright">技术支持：河南软信科技有限公司</string>
+    <string name="termsOfService">服务条款</string>
+    <string name="NDA">保密协议</string>
+    <string name="can_not_find_version_name">未知版本号</string>
+    <string name="num_of_person">%1$s</string>
+    <string name="num_of_read">阅读（%1$s）</string>
+    <string name="num_of_comment">评论（%1$s）</string>
+
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+
+    <string name="num_of_contact">%1$s位联系人</string>
+
+    <string name="clean_caches_tip">您是否要清除缓存？</string>
+    <string name="clean_files_tip">您是否要清除附件？</string>
+
+</resources>
