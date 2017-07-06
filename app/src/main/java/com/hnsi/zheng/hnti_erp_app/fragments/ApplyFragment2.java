@@ -1,18 +1,13 @@
 package com.hnsi.zheng.hnti_erp_app.fragments;
 
-import android.app.Dialog;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,18 +20,13 @@ import com.hnsi.zheng.hnti_erp_app.activities.ApprovalActivity2;
 import com.hnsi.zheng.hnti_erp_app.activities.MessageActivity;
 import com.hnsi.zheng.hnti_erp_app.activities.NewsActivity;
 import com.hnsi.zheng.hnti_erp_app.activities.NoticeActivity;
-import com.hnsi.zheng.hnti_erp_app.activities.WeatherActivity;
 import com.hnsi.zheng.hnti_erp_app.app.NetConstants;
-import com.hnsi.zheng.hnti_erp_app.beans.NewsEntity;
 import com.hnsi.zheng.hnti_erp_app.http.MyJsonObjectRequest;
 import com.hnsi.zheng.hnti_erp_app.http.VolleyHelper;
 import com.hnsi.zheng.hnti_erp_app.utils.Tools;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.util.ArrayList;
 
 /**
  * 新版应用界面

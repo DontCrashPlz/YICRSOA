@@ -285,14 +285,6 @@ public class NoticeDetailActivity extends MyBaseActivity{
 
         //加载并为评论按钮设置点击事件
         mCommentButtonLly= (LinearLayout) findViewById(R.id.notice_detail_lly_comment);
-//        mCommentButtonLly.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent=new Intent();
-//                intent.setClass(NoticeDetailActivity.this,CommentActivity.class);
-//                startActivity(intent);
-//            }
-//        });
 
         //加载两个按钮中间的分隔
         mDivide=findViewById(R.id.notice_detail_divide);
@@ -303,32 +295,5 @@ public class NoticeDetailActivity extends MyBaseActivity{
         //加载并设置评论人数
         mCommentNumTv= (TextView) findViewById(R.id.notice_detail_tv_commentnum);
     }
-
-    /**
-     * 显示进度框的方法
-     */
-//    public void showProgressDialog(){
-//        mDialog=Tools.createLoadingProgressDialog(NoticeDetailActivity.this, "正在加载数据...", new DialogInterface.OnDismissListener() {
-//            @Override
-//            public void onDismiss(DialogInterface dialog) {
-//                /** 取消网络请求，Toast网络请求已中断 */
-//                VolleyHelper.getInstance(NoticeDetailActivity.this).cancelRequestByTag(NetConstants.TAG_NEWS_DETAIL);
-//                Toast.makeText(NoticeDetailActivity.this,"网络请求已取消",Toast.LENGTH_SHORT).show();
-//            }
-//        });
-//
-//        mDialog.show();
-//    }
-
-    /**
-     *取消进度框的方法
-     */
-//    public void dismissProgressDialog(){
-//        if(mDialog==null){
-//            return;
-//        }else{
-//            mDialog.dismiss();
-//        }
-//    }
 
 }

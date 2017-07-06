@@ -53,83 +53,8 @@ public class HomeActivity extends MyBaseActivity{
     private void initUI() {
         initButtomTab();
 
-//        //把四个碎片界面添加到一个集合中
-//        mFragments=new ArrayList<>();
-//        mFragments.add(new MessageFragment());
-//        mFragments.add(new ContactsFragment());
-//        mFragments.add(new ApplyFragment());
-//        mFragments.add(new MineFragment());
-
-        //把Fragment集合赋给ViewPager
-//        mContentVp=  findViewById(R.id.home_vp_content);
-//        mContentVp.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
-//
-//            @Override
-//            public int getCount() {
-//                return mFragments.size();
-//            }
-//
-//            @Override
-//            public Fragment getItem(int position) {
-//                return mFragments.get(position);
-//            }
-//        });
-//        //给ViewPager设置页面变化监听
-//        mContentVp.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-//            @Override
-//            public void onPageSelected(int position) {
-//                switch (position){//ViewPager滚动到哪个页面，就把对应的Tab导航条中的按钮按下
-//                    case AppConstants.FRAGMENT_MSG_INDEX:{
-//                        mRadioGroup.check(R.id.home_tab_rbtn_msg);
-//                    }break;
-//                    case AppConstants.FRAGMENT_CONTACTS_INDEX:{
-//                        mRadioGroup.check(R.id.home_tab_rbtn_contacts);
-//                    }break;
-//                    case AppConstants.FRAGMENT_APPLY_INDEX:{
-//                        mRadioGroup.check(R.id.home_tab_rbtn_apply);
-//                    }break;
-//                    case AppConstants.FRAGMENT_MINE_INDEX:{
-//                        mRadioGroup.check(R.id.home_tab_rbtn_mine);
-//                    }break;
-//                }
-//            }
-//
-//            @Override
-//            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-//            }
-//
-//            @Override
-//            public void onPageScrollStateChanged(int state) {
-//            }
-//        });
-
         //刚进入主界面默认选中碎片界面（信息）
         mMsgRbtn.setChecked(true);
-
-//        FrameLayout frameLayout = (FrameLayout) findViewById(R.id.container);
-//        PromotedActionsLibrary promotedActionsLibrary = new PromotedActionsLibrary();
-//        promotedActionsLibrary.setup(getApplicationContext(), frameLayout);
-//
-//        promotedActionsLibrary.addItem(getResources().getDrawable(R.mipmap.shenpi),R.mipmap.shenpi_back,new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//            }
-//        });
-//        promotedActionsLibrary.addItem(getResources().getDrawable(R.mipmap.gongwen),R.mipmap.gongwen_back, new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//            }
-//        });
-//
-//        promotedActionsLibrary.addItem(getResources().getDrawable(R.mipmap.xiaoxi),R.mipmap.xiaoxi_back,new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//            }
-//        });
-//        promotedActionsLibrary.addMainItem(getResources().getDrawable(R.mipmap.menu), R.mipmap.menu_back);
 
     }
 

@@ -15,7 +15,6 @@ import com.hnsi.zheng.hnti_erp_app.R;
 import com.hnsi.zheng.hnti_erp_app.activities.AboutUsActivity;
 import com.hnsi.zheng.hnti_erp_app.activities.ChangePasswordActivity;
 import com.hnsi.zheng.hnti_erp_app.activities.FeedBackActivity;
-import com.hnsi.zheng.hnti_erp_app.activities.NewMsgActivity;
 import com.hnsi.zheng.hnti_erp_app.activities.PersonalDataActivity;
 import com.hnsi.zheng.hnti_erp_app.app.MyApplication;
 import com.hnsi.zheng.hnti_erp_app.utils.CommonUtils;
@@ -24,7 +23,6 @@ import com.hnsi.zheng.hnti_erp_app.utils.FilesCleanManager;
 import com.hnsi.zheng.hnti_erp_app.utils.Tools;
 import com.hnsi.zheng.hnti_erp_app.utils.UserIconDisplayOptionsFactory;
 import com.hnsi.zheng.hnti_erp_app.widgets.CircleImageView;
-import com.hnsi.zheng.hnti_erp_app.widgets.CleanCacheDialog;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
 /**

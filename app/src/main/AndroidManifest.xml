@@ -51,23 +51,7 @@
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".activities.ApprovalActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
             android:name=".activities.ApprovalActivity2"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name=".activities.VoteActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name=".activities.NoteActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name=".activities.NewMsgActivity"
             android:screenOrientation="portrait">
         </activity>
         <activity
@@ -95,10 +79,6 @@
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".activities.CommentActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
             android:name=".activities.UnFinishedMatterActivity"
             android:screenOrientation="portrait">
         </activity>
@@ -119,10 +99,6 @@
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".activities.HistoryListActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
             android:name=".activities.PersonalDataActivity"
             android:screenOrientation="portrait">
         </activity>
@@ -140,14 +116,6 @@
         </activity>
         <activity
             android:name=".activities.GuideViewActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name=".activities.WeatherActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name=".activities.CityListActivity"
             android:screenOrientation="portrait">
         </activity>
         <activity
